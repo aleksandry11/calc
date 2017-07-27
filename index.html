@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #485282;
+            color: #8CC25E;
+            font-family: 'Droid Serif', Serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .wrap {
+            display: flex;
+            align-items: center;
+        }
+        input#input {
+            width: 500px;
+            height: 50px;
+            font-size: 36px;
+            padding: 10px 20px;
+            border: none;
+            color: #161d3e;
+            outline: none;
+            background-color: #8cc25e;
+        }
+        button#button {
+            height: 70px;
+            margin-left: 10px;
+            background-color: #161d3e;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #8cc25e;
+            padding: 0 20px;
+            font-size: 24px;
+            transition: 0.2s ease;
+            border-radius: 5px;
+        }
+        button#button:hover {
+            background-color: #263061;
+        }
+        button#button:active {
+            transform: translateY(1px);
+        }
+        #label {
+            height: 70px;
+            padding: 10px 20px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <input type="text" id="input"><button id="button">Calculate</button>
+    </div>
+    <h3 id="label"></h3>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
